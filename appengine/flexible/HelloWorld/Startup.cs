@@ -43,7 +43,18 @@ namespace HelloWorld
 
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("Hello World!");
+                await context.Response.WriteAsync(
+                    @"<!DOCTYPE html>
+                    <?xml version='1.0' encoding='UTF-8'?>
+                    <html>
+                    <head>
+                    <title>Reiz Troy Durante's WebSite</title>
+                    </head>
+                    <body>
+                    <h1>The Header</h1>
+                    <section>The section</section>
+                    </body>
+                    </html>");
             });
         }
     }
